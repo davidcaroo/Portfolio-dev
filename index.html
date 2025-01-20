@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Caro</title>
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Icon Page -->
+  <link rel="icon" href="img/logoface.png">
+  <!-- CSS estilos -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Iconos FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- JavaScript Alerts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Favicons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="./img/logoface.png" alt="Profile" class="profile-img">
+        <h1 class="sitename">Portfolio</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#background" class="active">Home<br></a></li>
+          <li><a href="#aboutme">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Background Section -->
+    <section id="background" class="background section dark-background">
+      <img src="./img/background.jpg" alt="" data-aos="fade-in" class="background-img">
+      <div class="container d-flex flex-column  " data-aos="fade-up" data-aos-delay="100">
+        <div class="container-content">
+          <h2>I am David Caro</h2>
+          <p>
+            <span class="typed" data-typed-items="Software Developer..., PHP Developer..., Software Analyst..."></span>
+          </p>
+          <button class="download-btn pixel-corners mt-4">
+            <a href="./pdf/Currículum - David Caro Morales.pdf" class="download-btn pixel-corners mt-4" download>
+              <div class="button-content">
+                <div class="svg-container">
+                  <svg class="download-icon" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="text-container">
+                  <div class="text">Download CV</div>
+                </div>
+              </div>
+            </a>
+          </button>
+          <img src="./img/mayra_background.png" alt="Profile Image" class="profile-image">
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About me and Skills Section -->
+
+    <section class="aboutme" id="aboutme">
+      <div class="container mt-5 education-wrapper">
+        <div class="d-flex">
+          <h1 class="education-title mt-4">About me & Skills</h1>
+          <div class="circle mt-4"></div>
+        </div>
+      </div>
+      <div class="container ">
+        <div class="row ">
+          <div class="col-lg-6 col-sm-12 col-xs-12 mb-5 image">
+            <p>
+              I am a <strong>Junior Web Developer</strong> passionate about creating <strong>innovative and functional
+                web solutions</strong>.
+              With a strong foundation in <strong>front-end</strong> and <strong>back-end development</strong>, I build
+              <strong>user-centered websites</strong>
+              that deliver <strong>performance</strong> and <strong>visual appeal</strong>. I excel at <strong>solving
+                problems</strong>,
+              <strong>optimizing processes</strong>, and <strong>continuously learning</strong>. I value
+              <strong>organization</strong>,
+              <strong>planning</strong>, and <strong>attention to detail</strong>. If you're looking for a developer
+              with a <strong>creative mindset</strong>
+              and a <strong>drive for excellence</strong>, let's connect and create something extraordinary together!
+            </p>
+
+            <button class="ms-3 btn custom-button arrow">
+              <a href="#contact">
+                Contact&nbsp;
+                <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow">
+                  <path
+                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                  </path>
+                </svg>
+              </a>
+            </button>
+          </div>
+
+          <div class="col-lg-6 col-sm-12 col-xs-12 ">
+
+            <div class="d-flex mt-3">
+              <h3 class="percentage">80%</h3>
+              <div class="skill w-100">
+                <p>PHP </p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-skill="70" aria-valuenow="92" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <h3 class="percentage">80%</h3>
+              <div class="skill w-100">
+                <p>HTML, CSS</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-skill="88" aria-valuenow="92" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex mt-3 skills">
+              <h3 class="percentage">75%</h3>
+              <div class="skill w-100 ">
+                <p>JavaScript</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-skill="80" aria-valuenow="92" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex mt-3 skills">
+              <h3 class="percentage">80%</h3>
+              <div class="skill w-100 ">
+                <p>Vue JS</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-skill="80" aria-valuenow="92" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <h3 class="percentage">80%</h3>
+              <div class="skill w-100">
+                <p>Databases, MySQL</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-skill="90" aria-valuenow="92" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex mt-3 mb-5">
+              <h3 class="percentage">70%</h3>
+              <div class="skill w-100">
+                <p>Git - Git-Hub</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-skill="63" aria-valuenow="92" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <section class="container-fluid projects-container pt-4" id="projects">
+      <div class="container my-3">
+        <h2 class="section-title">Latest Projects</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="row justify-content-center">
+
+        <div class="project-card col-md-10 mt-5">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 col-md-12 imagencard">
+              <img src="./img/projects/millicents.png" alt="Web Project">
+            </div>
+            <div class="col-12 col-lg-6 col-md-12 p-4">
+              <div class="tech-slider mb-4">
+                <div class="tech-container">
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Bootstrap</span>
+                  <!-- Repeat tag -->
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+              </div>
+              <h2>Millicent's Beauty</h2>
+              <p class="card-text col-12 mb-4">
+                This project consists of a responsive website for a cosmetics and makeup products store, designed to
+                offer a fluid, aesthetic and functional user experience. The site includes modern features such as a
+                shopping cart, a functional sidebar, intuitive navigation and support for multiple languages.
+              </p>
+              <a href="https://millicents-seven.vercel.app/" class="btn custom-button-projects text-dark">View demo</a>
+              <a href="https://github.com/davidcaroo/millicents"
+                class="btn custom-button-projects text-dark ms-3">Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card col-md-10 mt-5">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 col-md-12 p-4">
+              <div class="tech-slider mb-4">
+                <div class="tech-container">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Laravel</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">Bootstrap</span>
+                  <!-- Repeat tag -->
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+              </div>
+              <h2>Inventary System</h2>
+              <p class="card-text col-12 mb-4">
+                Inventory control system in php with bootstrap and datatables, for the management of tables. This system
+                allows to have a control of incoming products, outgoing products, customer registration, query movements
+                by date, by customer. In datatables we added the search engine and data filtering to facilitate customer
+                navigation and user experience. This system was designed for the urban clothing store Districolombia
+                Shop.
+              </p>
+              <div class="mb-3">
+                <a href="https://oficial.districolombia.shop/" class="btn custom-button-projects text-dark">View
+                  demo</a>
+                <a href="https://github.com/davidcaroo/inventio-system"
+                  class="btn custom-button-projects text-dark ms-3">Repository</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12 imagencard">
+              <img src="./img/projects/inventary-sys.png" alt="Web Project">
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card col-md-10 mt-5">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 col-md-12 imagencard">
+              <img src="./img/projects/reportrash-panel.png" alt="Web Project">
+            </div>
+            <div class="col-12 col-lg-6 col-md-12 p-4">
+              <div class="tech-slider mb-4">
+                <div class="tech-container">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">Bootstrap</span>
+                  <span class="tech-tag">Vue JS</span>
+                  <!-- Repeat tag -->
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">Vue JS</span>
+                </div>
+              </div>
+              <h2>ReporTrash - Dashboard Admin</h2>
+              <p class="card-text col-12 mb-4">
+                Reportrash is an application designed to help citizens report litter problems in the city of Cartagena.
+                This application provides an intuitive platform for users to contribute to a cleaner and healthier
+                environment. Users can register incidents of overflowing or mismanaged trash. Available on Android and
+                web version for the administration panel. The app allows reporting problems with just a few clicks.
+              </p>
+              <a href="https://reportrash-panel-production.up.railway.app/#/login"
+                class="btn custom-button-projects text-dark">View demo</a>
+              <a href="https://github.com/davidcaroo/panel-administrativo"
+                class="btn custom-button-projects text-dark ms-3">Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card col-md-10 mt-5 mb-3">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 col-md-12 p-4">
+              <div class="tech-slider mb-4">
+                <div class="tech-container">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Front-end</span>
+                  <span class="tech-tag">Bootstrap</span>
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <!-- Repeat tag -->
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Front-end</span>
+                  <span class="tech-tag">Bootstrap</span>
+                </div>
+              </div>
+              <h2>Districolombia Shop - Landing Page</h2>
+              <p class="card-text col-12 mb-4">
+                Landing page of a modern urban style clothing store that combines quality, trend and urban culture in
+                its garments. This has been designed with the purpose of offering a fluid user experience, highlighting
+                the novelties of the store and facilitating direct contact for requests and sales through WhatsApp. In
+                addition, a form was included for those who wish to apply to be resellers to leave their data, using JS
+                and PHP.
+              </p>
+              <div class="mb-3">
+                <a href="https://davidcaroo.github.io/districolombia/" class="btn custom-button-projects text-dark">View
+                  demo</a>
+                <a href="https://github.com/davidcaroo/districolombia"
+                  class="btn custom-button-projects text-dark ms-3">Repository</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12 imagencard">
+              <img src="./img/projects/districolombia-shop.png" alt="Web Project">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+      <div class="container mt-5 mb-5">
+        <div class="row  justify-content-around">
+          <!-- Contact Left-side form -->
+          <div class="card col-10 col-xl-4 col-lg-5 col-md-7 col-sm-9 mb-5 image-contact">
+            <div class="card-img-overlay">
+              <h3 class="card-title">Contact Info</h3>
+              <p class="card-text ms-4">If you're looking for a passionate and committed developer,
+                I'm just a message away, let's talk!</p>
+              <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +57 323 223 1834</p>
+                <p><i class="fas fa-envelope"></i> <span>dacamo0502@gmail.com</span></p>
+                <p><i class="fas fa-map-marker-alt"></i> Cartagena, Colombia</p>
+              </div>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ingdavid-caro/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/davidcaroo"><i class="fab fa-github"></i></a>
+                <a href="mailto:dacamo0502@gmail.com"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Right-side form -->
+          <div id="form-container-contact" class="col-10 col-xl-7 col-lg-10 col-md-7 col-sm-7">
+            <div class="form h-100">
+              <h3 class="mt-4">Let’s Get in Touch!</h3>
+              <form class="my-5" action="https://formspree.io/f/xdkkrbzk" method="POST" id="contactForm"
+                name="contactForm">
+                <div class="row">
+                  <div class="col-md-6 form-group mb-3">
+                    <label for="" class="col-form-label">Name *</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                  </div>
+                  <div class="col-md-6 form-group mb-3">
+                    <label for="" class="col-form-label">Email *</label>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Your email">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group mb-3">
+                    <label for="subject" class="col-form-label">Subject *</label>
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject here">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group mb-3">
+                    <label for="message" class="col-form-label">Message *</label>
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="4" style="height: 100px"
+                      placeholder="Write your message"></textarea>
+                  </div>
+                </div>
+                <button class="btn custom-button arrow">
+                  Contact&nbsp;
+                  <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow">
+                    <path
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                    </path>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section>
+      <footer class="text-white p-3" style="background-color: black;">
+        <div class="container footer">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>David Caro</h4>
+              <p>See something you like? If something here caught your attention or you have an idea in your mind, let's
+                connect! I'm always open to new ideas and collaborations.</p>
+            </div>
+            <div class="col-md-6">
+              <h4 class="mb-3">Social</h4>
+              <div class="d-flex justify-content-center">
+                <a href="https://www.linkedin.com/in/ingdavid-caro/" target="_blank" class="social-icon">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/davidcaroo" target="_blank" class="social-icon">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:dacamo0502@gmail.com" class="social-icon">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="./pdf/Currículum - David Caro Morales.pdf" class="social-icon" download>
+                  <i class="fas fa-file-alt"></i>
+                </a>
+                <a href="https://github.com/davidcaroo" target="_blank" class="social-icon">
+                  <i class="fas fa-briefcase"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="divider"></div>
+          <p class="copyright">
+            © Copyright <span id="current-year"></span>. Made by
+            <a href="https://github.com/davidcaroo" style="color: #00ff7f;" target="_blank">David Caro&nbsp;</a>
+            <img src="./img/logoface.png" style="width: 35px; margin-bottom: 15px;" alt="Icono" class="icon" />
+          </p>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- JavaScript Files -->
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery Validation plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="./index.js"></script>
+  <script>
+    // Get the current year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
